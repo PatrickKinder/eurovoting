@@ -1,4 +1,4 @@
-package com.eurovoting.eurovoting;
+package com.eurovoting;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

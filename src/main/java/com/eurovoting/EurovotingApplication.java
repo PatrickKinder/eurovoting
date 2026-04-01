@@ -1,4 +1,4 @@
-package com.eurovoting.eurovoting;
+package com.eurovoting;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
