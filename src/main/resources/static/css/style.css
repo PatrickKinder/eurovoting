@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1b1235, #2c1d5a, #0f0a1f);
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.results-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    padding: 28px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+}
+
+.results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.eyebrow {
+    margin: 0 0 6px 0;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #d7c8ff;
+}
+
+.results-header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.subtitle {
+    margin: 8px 0 0 0;
+    color: #d8d8e6;
+}
+
+.back-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.12);
+    padding: 10px 14px;
+    border-radius: 10px;
+    transition: background 0.2s ease;
+}
+
+.back-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+}
+
+.results-table thead th {
+    text-align: left;
+    padding: 14px 16px;
+    font-size: 0.95rem;
+    color: #d7c8ff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.results-table tbody td {
+    padding: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    vertical-align: middle;
+}
+
+.results-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.rank-cell {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.country-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.country-code {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.country-name {
+    font-size: 0.9rem;
+    color: #d8d8e6;
+}
+
+.total-cell {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.winner {
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.22), rgba(255, 255, 255, 0.05));
+    outline: 2px solid rgba(255, 215, 0, 0.55);
+}
+
+.winner .rank-cell,
+.winner .total-cell {
+    color: #ffd700;
+}
+
+.message {
+    margin-bottom: 18px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.message.error {
+    background: rgba(255, 70, 70, 0.16);
+    border: 1px solid rgba(255, 70, 70, 0.45);
+    color: #ffd5d5;
+}
+
+.message.info {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+}
+
+.hidden {
+    display: none;
+}
