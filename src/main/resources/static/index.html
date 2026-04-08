@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eurovision Voting</title>
+  <!-- style.css immer zuerst -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+<header>
+  <h1>🎤 Eurovision Voting</h1>
+  <nav>
+    <a href="./index.html">Abstimmung</a>
+    <a href="./results.html">Ergebnisse</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- Abstimmungsformular -->
+  <section class="card">
+    <h2>Stimme abgeben</h2>
+
+    <form id="voteForm" novalidate>
+
+      <!-- Kandidat/in wählen -->
+      <div class="form-group">
+        <label for="contestantSelect">Kandidat/in</label>
+        <select id="contestantSelect" required>
+          <option value="">– wird geladen… –</option>
+        </select>
+      </div>
+
+      <!-- Jury oder Publikum -->
+      <div class="form-group">
+        <label for="voterRoleSelect">Abstimmungsart</label>
+        <select id="voterRoleSelect" required>
+          <option value="">– bitte wählen –</option>
+          <option value="JURY">JURY</option>
+          <option value="AUDIENCE">AUDIENCE</option>
+        </select>
+      </div>
+
+      <!-- Jury-Mitglied (nur sichtbar wenn JURY gewählt) -->
+      <div class="form-group" id="jurySection">
+        <label for="juryMemberSelect">Jury-Mitglied</label>
+        <select id="juryMemberSelect">
+          <option value="">– Mitglied wählen –</option>
+          <option value="1">Jury-Mitglied 1</option>
+          <option value="2">Jury-Mitglied 2</option>
+          <option value="3">Jury-Mitglied 3</option>
+        </select>
+      </div>
+
+      <!-- Punktzahl -->
+      <div class="form-group">
+        <label for="pointsSelect">Punkte</label>
+        <select id="pointsSelect" required>
+          <option value="">– Punkte wählen –</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="10">10</option>
+          <option value="12">12</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn-submit">Stimme abgeben</button>
+
+      <!-- Nachrichten-Box (Erfolg / Fehler) -->
+      <div id="messageBox" class="message" role="alert" aria-live="polite"></div>
+    </form>
+  </section>
+
+  <!-- Abstimmungsstatus -->
+  <section class="card">
+    <h2>Abstimmungsstatus</h2>
+    <div id="statusBox">Wird geladen…</div>
+  </section>
+
+</main>
+
+<footer>Eurovision Voting System – DHBW Uni-Projekt</footer>
+
+<!--
+  WICHTIG (Rule 8 aus Dokument):
+  Skripte in genau dieser Reihenfolge laden:
+  1. api.js
+  2. voting.js
+-->
+<script src="./js/api.js"></script>
+<script src="./js/voting.js"></script>
+
+</body>
+</html>
