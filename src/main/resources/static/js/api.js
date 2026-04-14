@@ -8,7 +8,7 @@
 
 // Schalter: true = Mock-Daten, false = echtes Backend
 // Auf false setzen, sobald Person 1 ihren Checklist bestanden hat.
-const USE_MOCK = true;
+const USE_MOCK = false;
 
 const BASE_URL = "http://localhost:8080/api";
 
