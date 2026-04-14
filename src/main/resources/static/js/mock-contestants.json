@@ -1,0 +1,13 @@
+[
+  { "id": 1,  "artistName": "Léa Dupont",       "songTitle": "Mon Étoile",       "countryName": "France",         "countryCode": "FRA" },
+  { "id": 2,  "artistName": "Marco Rossi",       "songTitle": "Volare Con Te",    "countryName": "Italy",          "countryCode": "ITA" },
+  { "id": 3,  "artistName": "Sofia Martínez",    "songTitle": "Corazón Eterno",   "countryName": "Spain",          "countryCode": "ESP" },
+  { "id": 4,  "artistName": "James Taylor",      "songTitle": "Rise Again",       "countryName": "United Kingdom", "countryCode": "GBR" },
+  { "id": 5,  "artistName": "Astrid Lindgren",   "songTitle": "Northern Lights",  "countryName": "Sweden",         "countryCode": "SWE" },
+  { "id": 6,  "artistName": "Erik Hansen",       "songTitle": "Fjord Dreams",     "countryName": "Norway",         "countryCode": "NOR" },
+  { "id": 7,  "artistName": "Olena Kovalenko",   "songTitle": "Sunflower Fields", "countryName": "Ukraine",        "countryCode": "UKR" },
+  { "id": 8,  "artistName": "Noa Cohen",         "songTitle": "Chai",             "countryName": "Israel",         "countryCode": "ISR" },
+  { "id": 9,  "artistName": "Zoe Mitchell",      "songTitle": "Down Under Stars", "countryName": "Australia",      "countryCode": "AUS" },
+  { "id": 10, "artistName": "Luca Favre",        "songTitle": "Alpen Glow",       "countryName": "Switzerland",    "countryCode": "CHE" },
+  { "id": 11, "artistName": "Hannah Müller",     "songTitle": "Heimweh",          "countryName": "Germany",        "countryCode": "DEU" }
+]

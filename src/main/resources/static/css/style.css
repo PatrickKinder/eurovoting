@@ -1,0 +1,322 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1b1235, #2c1d5a, #0f0a1f);
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.results-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    padding: 28px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+}
+
+.results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.eyebrow {
+    margin: 0 0 6px 0;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #d7c8ff;
+}
+
+.results-header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.subtitle {
+    margin: 8px 0 0 0;
+    color: #d8d8e6;
+}
+
+.back-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.12);
+    padding: 10px 14px;
+    border-radius: 10px;
+    transition: background 0.2s ease;
+}
+
+.back-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+}
+
+.results-table thead th {
+    text-align: left;
+    padding: 14px 16px;
+    font-size: 0.95rem;
+    color: #d7c8ff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.results-table tbody td {
+    padding: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    vertical-align: middle;
+}
+
+.results-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.rank-cell {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.country-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.country-code {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.country-name {
+    font-size: 0.9rem;
+    color: #d8d8e6;
+}
+
+.total-cell {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.winner {
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.22), rgba(255, 255, 255, 0.05));
+    outline: 2px solid rgba(255, 215, 0, 0.55);
+}
+
+.winner .rank-cell,
+.winner .total-cell {
+    color: #ffd700;
+}
+
+.message {
+    margin-bottom: 18px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.message.error {
+    background: rgba(255, 70, 70, 0.16);
+    border: 1px solid rgba(255, 70, 70, 0.45);
+    color: #ffd5d5;
+}
+
+.message.info {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ============================================================
+   style.css  –  Person 4
+   Ort: src/main/resources/static/css/style.css
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 16px;
+    background: #0d0d2b;
+    color: #f0f0f0;
+    min-height: 100vh;
+}
+
+/* ---- Kopfzeile ---- */
+header {
+    background: linear-gradient(135deg, #1a1a6e, #6a0080);
+    padding: 24px 32px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: #ffe066;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 0.95rem;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+}
+
+header nav a:hover { opacity: 1; text-decoration: underline; }
+
+/* ---- Haupt-Layout ---- */
+main {
+    max-width: 760px;
+    margin: 40px auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* ---- Karten ---- */
+.card {
+    background: #1a1a3e;
+    border: 1px solid #2e2e6e;
+    border-radius: 10px;
+    padding: 28px 32px;
+}
+
+.card h2 {
+    font-size: 1.25rem;
+    color: #ffe066;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #2e2e6e;
+    padding-bottom: 10px;
+}
+
+/* ---- Formular ---- */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 18px;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #aaaacc;
+    font-weight: 600;
+}
+
+select {
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #3a3a7e;
+    background: #0d0d2b;
+    color: #f0f0f0;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+select:focus {
+    outline: 2px solid #ffe066;
+    border-color: #ffe066;
+}
+
+/* ---- Jury-Bereich (standardmäßig versteckt) ---- */
+#jurySection { display: none; }
+
+/* ---- Senden-Button ---- */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background: #ffe066;
+    color: #0d0d2b;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    margin-top: 8px;
+}
+
+.btn-submit:hover  { background: #ffd700; }
+.btn-submit:active { transform: scale(0.98); }
+
+/* ---- Nachrichten ---- */
+.message {
+    min-height: 24px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    margin-top: 12px;
+}
+
+.message.success {
+    background: #1a3e1a;
+    color: #66ff88;
+    border: 1px solid #2e6e2e;
+}
+
+.message.error {
+    background: #3e1a1a;
+    color: #ff8888;
+    border: 1px solid #6e2e2e;
+}
+
+/* ---- Status-Bereich ---- */
+#statusBox h3 {
+    font-size: 1rem;
+    color: #ffe066;
+    margin-bottom: 12px;
+}
+
+.status-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #2e2e6e;
+    font-size: 0.9rem;
+    color: #aaaacc;
+}
+
+.status-row.done {
+    color: #66ff88;
+}
+
+.status-row:last-child { border-bottom: none; }
+
+/* ---- Fußzeile ---- */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #555588;
+    font-size: 0.8rem;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 600px) {
+    header h1 { font-size: 1.4rem; }
+    .card { padding: 20px 16px; }
+}

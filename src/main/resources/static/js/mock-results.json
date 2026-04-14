@@ -1,0 +1,13 @@
+[
+  { "rank": 1, "contestantId": 2, "artistName": "Celine Marie", "songTitle": "Blue Horizon", "countryName": "France", "countryCode": "FRA", "totalPoints": 387, "juryPoints": 214, "audiencePoints": 173 },
+  { "rank": 2, "contestantId": 3, "artistName": "Erik Lindqvist", "songTitle": "Northern Lights", "countryName": "Sweden", "countryCode": "SWE", "totalPoints": 340, "juryPoints": 190, "audiencePoints": 150 },
+  { "rank": 3, "contestantId": 4, "artistName": "Sofia Romano", "songTitle": "Bella Notte", "countryName": "Italy", "countryCode": "ITA", "totalPoints": 298, "juryPoints": 165, "audiencePoints": 133 },
+  { "rank": 4, "contestantId": 5, "artistName": "Ana Sousa", "songTitle": "Mar Salgado", "countryName": "Portugal", "countryCode": "PRT", "totalPoints": 201, "juryPoints": 120, "audiencePoints": 81 },
+  { "rank": 5, "contestantId": 6, "artistName": "Carlos Vega", "songTitle": "Fuego", "countryName": "Spain", "countryCode": "ESP", "totalPoints": 180, "juryPoints": 100, "audiencePoints": 80 },
+  { "rank": 6, "contestantId": 7, "artistName": "Ingrid Berg", "songTitle": "Aurora", "countryName": "Norway", "countryCode": "NOR", "totalPoints": 155, "juryPoints": 90, "audiencePoints": 65 },
+  { "rank": 7, "contestantId": 8, "artistName": "Olena Koval", "songTitle": "Zoria", "countryName": "Ukraine", "countryCode": "UKR", "totalPoints": 134, "juryPoints": 80, "audiencePoints": 54 },
+  { "rank": 8, "contestantId": 9, "artistName": "Nikos Papadopoulos", "songTitle": "Thalassa", "countryName": "Greece", "countryCode": "GRC", "totalPoints": 98, "juryPoints": 55, "audiencePoints": 43 },
+  { "rank": 9, "contestantId": 10, "artistName": "Aino Mäkinen", "songTitle": "Revontulet", "countryName": "Finland", "countryCode": "FIN", "totalPoints": 67, "juryPoints": 40, "audiencePoints": 27 },
+  { "rank": 10, "contestantId": 11, "artistName": "Lily Chen", "songTitle": "Southern Cross", "countryName": "Australia", "countryCode": "AUS", "totalPoints": 42, "juryPoints": 25, "audiencePoints": 17 },
+  { "rank": 11, "contestantId": 1, "artistName": "Max Mustermann", "songTitle": "Fire and Ice", "countryName": "Germany", "countryCode": "DEU", "totalPoints": 0, "juryPoints": 0, "audiencePoints": 0 }
+]

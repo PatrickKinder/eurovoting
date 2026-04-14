@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eurovision Results</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+<main class="page-container">
+    <section class="results-card">
+        <div class="results-header">
+            <div>
+                <p class="eyebrow">Eurovision Voting</p>
+                <h1>Live Results</h1>
+                <p class="subtitle">Current ranking of all contestants</p>
+            </div>
+
+            <a href="./index.html" class="back-link">← Back to Voting</a>
+        </div>
+
+        <div id="resultsMessage" class="message hidden" role="alert"></div>
+
+        <div class="table-wrapper">
+            <table class="results-table">
+                <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Country</th>
+                    <th>Artist</th>
+                    <th>Song</th>
+                    <th>Jury Points</th>
+                    <th>Audience Points</th>
+                    <th>Total</th>
+                </tr>
+                </thead>
+                <tbody id="resultsTableBody">
+                <!-- Filled by results.js -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+<script src="./js/api.js"></script>
+<script src="./js/results.js"></script>
+</body>
+</html>
