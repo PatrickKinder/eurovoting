@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt - Eurovision Voting</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+<main class="page-container">
+    <section class="legal-card">
+        <p class="eyebrow">Eurovision Voting</p>
+        <h1>Kontakt</h1>
+
+        <div class="legal-content">
+            <p>
+                Bei Fragen zu diesem studentischen Softwareprojekt können Sie uns unter den
+                folgenden Kontaktdaten erreichen:
+            </p>
+
+            <h2>Kontaktinformationen</h2>
+            <p>
+                Ansprechpartner: Max Mustermann<br>
+                E-Mail: max.mustermann@example.com<br>
+                Telefon: +49 123 456789
+            </p>
+
+            <h2>Projektkontext</h2>
+            <p>
+                Diese Website wurde als Teil eines Hochschulprojekts zur Demonstration einer
+                Voting-Anwendung entwickelt.
+            </p>
+
+            <h2>Optionales Kontaktformular</h2>
+            <form class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Ihr Name" />
+
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" name="email" placeholder="ihre@email.de" />
+
+                <label for="message">Nachricht</label>
+                <textarea id="message" name="message" rows="6" placeholder="Ihre Nachricht"></textarea>
+
+                <button type="button" class="primary-button" onclick="showDemoMessage()">
+                    Nachricht senden
+                </button>
+            </form>
+
+            <p id="contactInfoMessage" class="message hidden"></p>
+        </div>
+
+        <div class="page-actions">
+            <a href="./index.html" class="back-link">← Zur Voting-Seite</a>
+            <a href="./results.html" class="back-link">Zu den Ergebnissen →</a>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <nav class="footer-nav">
+        <a href="./impressum.html">Impressum</a>
+        <a href="./datenschutz.html">Datenschutz</a>
+        <a href="./kontakt.html">Kontakt</a>
+    </nav>
+</footer>
+
+<script>
+    function showDemoMessage() {
+        const box = document.getElementById("contactInfoMessage");
+        box.textContent = "Dies ist ein Demo-Formular ohne Backend-Anbindung.";
+        box.className = "message info";
+    }
+</script>
+</body>
+</html>
